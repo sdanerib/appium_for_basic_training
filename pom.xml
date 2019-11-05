@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.stephanydaneri.appium</groupId>
+    <artifactId>AppiumBase</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <description>Stephany Daneri's Appium Base Project</description>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <restassured.version>3.3.0</restassured.version>
+        <junit.jupiter.version>5.3.1</junit.jupiter.version>
+        <junit.dataprovider.version>2.4</junit.dataprovider.version>
+        <jackson.databind.version>2.9.8</jackson.databind.version>
+        <com.googlecode.json-simple.version>1.1.1</com.googlecode.json-simple.version>
+
+        <invokeAppium/>
+        <appiumServerURL/>
+        <pathToAppFile>${project.basedir}/src/test/resources/VodQA</pathToAppFile>
+        <device.id>DEVICE_ID_OF_TEST_DEVICE</device.id>
+        <device>android</device>
+        <threads>1</threads>
+        <remote>false</remote>
+        <enableDebugMode>false</enableDebugMode>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${restassured.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.databind.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.5.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.5.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>${com.googlecode.json-simple.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>7.2.0</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
