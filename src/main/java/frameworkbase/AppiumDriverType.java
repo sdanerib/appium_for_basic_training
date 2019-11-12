@@ -48,7 +48,7 @@ public enum AppiumDriverType implements AppiumDriverSetup {
             capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
             capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.IOS);
             capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 8");
-            capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12.1");
+            capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12.2");
             capabilities.setCapability(MobileCapabilityType.APP, appResourcesPath +"ReactNative.app");
 
             if (debug) {
