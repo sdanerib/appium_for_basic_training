@@ -11,7 +11,7 @@ public class AppiumFactory {
     private WebDriver driver;
     private AppiumDriverType selectedDriverType;
 
-    private final AppiumDriverType defaultDriverType = AppiumDriverType.IPHONE;
+    private final AppiumDriverType defaultDriverType = AppiumDriverType.ANDROID;
 
     private final String appiumConfig = System.getProperty("device", defaultDriverType.toString()).toUpperCase();
     private final boolean setDebugMode = Boolean.getBoolean("enableDebugMode");
