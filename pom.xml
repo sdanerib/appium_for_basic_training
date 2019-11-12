@@ -45,14 +45,14 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>5.5.0</version>
+            <version>5.4.2</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.5.0</version>
+            <version>5.4.2</version>
             <scope>test</scope>
         </dependency>
 
@@ -65,7 +65,7 @@
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
-            <version>7.2.0</version>
+            <version>7.0.0</version>
         </dependency>
 
     </dependencies>
